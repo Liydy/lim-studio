@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <base href="./" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Нуар Студио — демо-концепт студии красоты</title>
+  <meta name="description" content="Демо-концепт студии красоты «Нуар Студио»: маникюр, педикюр, стрижки, брови и ресницы. Адрес и контакты вымышлены." />
+  <meta name="theme-color" content="#0e0d0b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230e0d0b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f0c33c' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="logo-lili" viewBox="0 0 200 85">
+        <text x="100" y="76" text-anchor="middle" font-family="Prata, Georgia, 'Times New Roman', serif" font-size="32" letter-spacing="0.5" fill="currentColor">Нуар Студио</text>
+      </symbol>
+      <symbol id="logo-lili-full" viewBox="0 0 240 122">
+        <text x="120" y="79" text-anchor="middle" font-family="Prata, Georgia, 'Times New Roman', serif" font-size="32" letter-spacing="0.5" fill="currentColor">Нуар Студио</text>
+        <text x="120" y="111" text-anchor="middle" font-family="Manrope, 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="500" letter-spacing="6.2" fill="currentColor" opacity="0.72">СТУДИЯ КРАСОТЫ</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Нуар Студио — студия красоты, на главную">
+        <svg class="brand-logo" viewBox="0 0 200 85" aria-hidden="true" focusable="false">
+          <use href="#logo-lili"></use>
+        </svg>
+        <span class="brand-sub">студия красоты</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#about">О студии</a>
+        <a href="#gallery">Работы</a>
+        <a href="#reviews">Демо-отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--gold btn--sm header-cta" href="#booking">Записаться</a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-top">
+      <span class="mobile-nav-label">Меню</span>
+      <button class="mobile-nav-close" type="button" aria-label="Закрыть меню">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav aria-label="Мобильная навигация">
+      <a href="#services"><span>01</span>Услуги</a>
+      <a href="#about"><span>02</span>О студии</a>
+      <a href="#gallery"><span>03</span>Работы</a>
+      <a href="#reviews"><span>04</span>Демо-отзывы</a>
+      <a href="#booking"><span>05</span>Запись</a>
+      <a href="#contacts"><span>06</span>Контакты</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+      <p>ул. Примерная, 1<br />Ростов-на-Дону</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ── Первый экран ─────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow reveal">
+            <span class="eyebrow-line" aria-hidden="true"></span>
+            Студия красоты · Ростов-на-Дону
+          </p>
+
+          <h1 class="hero-title reveal" id="hero-title">
+            <span class="sr-only">Нуар Студио — студия красоты в Ростове-на-Дону</span>
+            <svg class="hero-logo" viewBox="0 0 240 122" aria-hidden="true" focusable="false">
+              <use href="#logo-lili-full"></use>
+            </svg>
+          </h1>
+
+          <p class="hero-lead reveal">
+            Маникюр и педикюр, брови и ресницы, стрижки — на ул. Примерной, 1.
+            Девять услуг в одном пространстве, по записи.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn--gold" href="#booking">Записаться</a>
+            <a class="btn btn--outline" href="tel:+79000000000">+7 (900) 000-00-00</a>
+          </div>
+
+          <div class="hero-meta reveal">
+            <span class="hero-hours">Ежедневно · 09:30–20:00</span>
+          </div>
+        </div>
+
+        <figure class="hero-visual reveal">
+          <div class="hero-frame">
+            <img
+              src="assets/img/hero.jpg"
+              alt="Демо-изображение"
+              width="1200" height="1800" fetchpriority="high" decoding="async" />
+            <span class="hero-frame-line" aria-hidden="true"></span>
+          </div>
+
+          <figcaption class="hero-card">
+            <span class="hero-card-label">Адрес</span>
+            <strong>ул. Примерная, 1</strong>
+            <span class="hero-card-hours">Демо-локация</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Бегущая строка ───────────────────────────────── -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <ul class="ticker-list">
+          <li>Маникюр</li><li>Педикюр</li><li>Стрижки</li><li>Брови</li><li>Ресницы</li><li>Укрепление ногтей</li><li>Ламинирование</li><li>Окрашивание бровей</li><li>Укладка бровей</li>
+        </ul>
+        <ul class="ticker-list">
+          <li>Маникюр</li><li>Педикюр</li><li>Стрижки</li><li>Брови</li><li>Ресницы</li><li>Укрепление ногтей</li><li>Ламинирование</li><li>Окрашивание бровей</li><li>Укладка бровей</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Услуги ───────────────────────────────────────── -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow"><span>01</span> Услуги</p>
+            <h2 class="section-title" id="services-title">
+              Всё, за чем<br />приходят <em>к нам</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Ногти, брови, ресницы и волосы — девять направлений.
+            Свободное время и цены — по телефону или в карточке студии.
+          </p>
+        </div>
+
+        <ul class="service-grid">
+          <li>
+            <article class="service-card reveal" style="--i:0">
+              <span class="service-num">01</span>
+              <h3>Маникюр</h3>
+              <p>Гигиенический маникюр и покрытие гель-лаком: форма, кутикула, стойкость.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:1">
+              <span class="service-num">02</span>
+              <h3>Педикюр</h3>
+              <p>Гигиенический педикюр и покрытие лаком или гель-лаком.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:2">
+              <span class="service-num">03</span>
+              <h3>Укрепление ногтей</h3>
+              <p>Для тонких и слоящихся ногтей: прочность без наращивания.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:0">
+              <span class="service-num">04</span>
+              <h3>Стрижки</h3>
+              <p>Женская, детская и стрижка чёлки. Форма под структуру волос.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:1">
+              <span class="service-num">05</span>
+              <h3>Архитектура бровей</h3>
+              <p>Форма по чертам лица, с окрашиванием или без.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:2">
+              <span class="service-num">06</span>
+              <h3>Коррекция бровей</h3>
+              <p>Пинцет или воск: чистая линия и никаких лишних волосков.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:0">
+              <span class="service-num">07</span>
+              <h3>Укладка бровей</h3>
+              <p>Долговременная укладка волосков — сама по себе или в комплексе.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:1">
+              <span class="service-num">08</span>
+              <h3>Ламинирование ресниц</h3>
+              <p>Изгиб, объём и тёмный цвет без туши и без наращивания.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+          <li>
+            <article class="service-card reveal" style="--i:2">
+              <span class="service-num">09</span>
+              <h3>Наращивание ресниц</h3>
+              <p>Объём и длина под ваши черты — обсудим на месте.</p>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </article>
+          </li>
+        </ul>
+
+        <p class="services-note reveal">
+          Цены и свободное время —
+          <a href="tel:+79000000000">+7 (900) 000-00-00</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── О студии ─────────────────────────────────────── -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <figure class="about-main">
+            <img
+              src="assets/img/about-1.jpg"
+              alt="Демо-изображение"
+              width="900" height="600" loading="lazy" decoding="async" />
+            <figcaption>Рабочий зал на ул. Примерной, 1</figcaption>
+          </figure>
+          <figure class="about-small">
+            <img
+              src="assets/img/about-2.jpg"
+              alt="Демо-изображение"
+              width="500" height="333" loading="lazy" decoding="async" />
+            <figcaption>Детали ухода</figcaption>
+          </figure>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow eyebrow--light reveal"><span>02</span> О студии</p>
+          <h2 class="section-title reveal" id="about-title">
+            Спокойный темп,<br /><em>аккуратная</em> работа
+          </h2>
+          <div class="about-text">
+            <p class="reveal">
+              Нуар Студио — студия красоты в Ростове-на-Дону.
+              ул. Примерная, 1: рядом демо-ориентир.
+            </p>
+            <p class="reveal">
+              Маникюр и педикюр, брови и ресницы, стрижки — в одном месте.
+              Можно собрать несколько процедур подряд и не ездить по городу.
+            </p>
+            <p class="reveal">
+              Работаем ежедневно с 09:30 до 20:00, по записи.
+            </p>
+          </div>
+
+          <p class="about-note reveal">
+            <span class="about-dot" aria-hidden="true"></span>
+            Демо-концепт: цифры и отзывы не используются
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Манифест ─────────────────────────────────────── -->
+    <section class="manifesto" aria-label="Подход студии">
+      <div class="container">
+        <p class="manifesto-orn" aria-hidden="true"><span></span>◆<span></span></p>
+        <blockquote class="reveal">
+          <p>Меньше суеты —<br />больше <em>внимания</em>.</p>
+        </blockquote>
+        <p class="manifesto-sub reveal">Нуар Студио · студия красоты · Ростов-на-Дону</p>
+      </div>
+    </section>
+
+    <!-- ── Работы ───────────────────────────────────────── -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow"><span>03</span> Работы</p>
+            <h2 class="section-title" id="gallery-title">
+              Кадры студии<br />и <em>деталей</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Четыре кадра о том, как выглядит уход, когда никто не спешит.
+            Нажмите на фото, чтобы рассмотреть ближе.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <button class="gallery-btn" type="button"
+                    data-full="assets/img/gal-1-full.jpg"
+                    data-caption="Маникюр — форма и покрытие"
+                    aria-label="Открыть фото: маникюр">
+              <img src="assets/img/gal-1.jpg"
+                   alt="Демо-изображение"
+                   width="800" height="533" loading="lazy" decoding="async" />
+              <span class="gallery-zoom" aria-hidden="true">+</span>
+            </button>
+            <figcaption><span>Маникюр</span><span>форма и покрытие</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <button class="gallery-btn" type="button"
+                    data-full="assets/img/gal-2-full.jpg"
+                    data-caption="Пространство — зеркала и свет"
+                    aria-label="Открыть фото: зал студии">
+              <img src="assets/img/gal-2.jpg"
+                   alt="Демо-изображение"
+                   width="1000" height="750" loading="lazy" decoding="async" />
+              <span class="gallery-zoom" aria-hidden="true">+</span>
+            </button>
+            <figcaption><span>Пространство</span><span>зеркала и свет</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <button class="gallery-btn" type="button"
+                    data-full="assets/img/gal-3-full.jpg"
+                    data-caption="Уход за руками — чистая работа"
+                    aria-label="Открыть фото: уход за руками">
+              <img src="assets/img/gal-3.jpg"
+                   alt="Демо-изображение"
+                   width="700" height="394" loading="lazy" decoding="async" />
+              <span class="gallery-zoom" aria-hidden="true">+</span>
+            </button>
+            <figcaption><span>Уход за руками</span><span>чистая работа</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <button class="gallery-btn" type="button"
+                    data-full="assets/img/gal-4-full.jpg"
+                    data-caption="Детали — кисти и текстуры"
+                    aria-label="Открыть фото: детали макияжа">
+              <img src="assets/img/gal-4.jpg"
+                   alt="Демо-изображение"
+                   width="700" height="700" loading="lazy" decoding="async" />
+              <span class="gallery-zoom" aria-hidden="true">+</span>
+            </button>
+            <figcaption><span>Детали</span><span>кисти и текстуры</span></figcaption>
+          </figure>
+        </div>
+
+        <p class="gallery-note reveal">
+          Демо-изображения: нейтральные плейсхолдеры.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Отзывы (демо) ────────────────────────────────── -->
+    <section class="rating" id="reviews" aria-labelledby="rating-title">
+      <div class="container rating-grid">
+        <div class="rating-score reveal">
+          <p class="eyebrow"><span>04</span> Демо</p>
+          <p class="rating-value">—</p>
+          <p class="rating-source">без реальных рейтингов</p>
+        </div>
+
+        <div class="rating-copy">
+          <h2 class="section-title reveal" id="rating-title">
+            Отзывы<br /><em>вымышлены</em>
+          </h2>
+          <p class="rating-lead reveal">
+            Демо-концепт: рейтинги, отзывы и имена не относятся к реальным людям.
+          </p>
+          <div class="rating-actions reveal">
+            <a class="btn btn--dark" href="#booking">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Запись ───────────────────────────────────────── -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow"><span>05</span> Запись</p>
+          <h2 class="section-title reveal" id="booking-title">
+            Оставьте имя<br />и <em>телефон</em>
+          </h2>
+          <p class="section-lead reveal">
+            Перезвоним, уточним пожелания и подберём время.
+            Или позвоните сами — так быстрее.
+          </p>
+
+          <ol class="booking-steps">
+            <li class="reveal">
+              <span>01</span>
+              <div>
+                <h3>Выберите услугу</h3>
+                <p>Достаточно направления: детали уточним при записи.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <div>
+                <h3>Оставьте контакты</h3>
+                <p>Имя и телефон — чтобы перезвонить и подтвердить.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <div>
+                <h3>Согласуйте время</h3>
+                <p>Подберём день и час, когда вам удобно.</p>
+              </div>
+            </li>
+          </ol>
+
+          <p class="booking-call reveal">
+            Или сразу по телефону:
+            <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+          </p>
+        </div>
+
+        <div class="booking-panel reveal">
+          <div class="booking-panel-head">
+            <h3>Заявка на запись</h3>
+            <span class="demo-chip">демо</span>
+          </div>
+
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="field">
+              <label for="bf-name">Имя</label>
+              <input id="bf-name" name="name" type="text" autocomplete="name"
+                     placeholder="Как к вам обращаться" aria-describedby="bf-name-error" />
+              <p class="field-error" id="bf-name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="bf-phone">Телефон</label>
+              <input id="bf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                     placeholder="+7 (___) ___-__-__" aria-describedby="bf-phone-error" />
+              <p class="field-error" id="bf-phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="bf-service">Услуга</label>
+              <select id="bf-service" name="service" aria-describedby="bf-service-error">
+                <option value="" selected disabled>Выберите услугу</option>
+                <option>Маникюр</option>
+                <option>Педикюр</option>
+                <option>Укрепление ногтей</option>
+                <option>Стрижка</option>
+                <option>Архитектура бровей</option>
+                <option>Коррекция бровей</option>
+                <option>Укладка бровей</option>
+                <option>Ламинирование ресниц</option>
+                <option>Наращивание ресниц</option>
+                <option>Не знаю — нужна консультация</option>
+              </select>
+              <p class="field-error" id="bf-service-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="bf-date">Удобная дата <span class="field-optional">необязательно</span></label>
+              <input id="bf-date" name="date" type="date" aria-describedby="bf-date-error" />
+              <p class="field-error" id="bf-date-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="bf-comment">Комментарий <span class="field-optional">необязательно</span></label>
+              <textarea id="bf-comment" name="comment" rows="3" maxlength="400"
+                        placeholder="Пожелания по времени или услуге"></textarea>
+            </div>
+
+            <div class="field field--check">
+              <label class="check" for="bf-consent">
+                <input id="bf-consent" name="consent" type="checkbox" aria-describedby="bf-consent-error" />
+                <span class="check-box" aria-hidden="true"></span>
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+              <p class="field-error" id="bf-consent-error" aria-live="polite"></p>
+            </div>
+
+            <button class="btn btn--gold btn--full" type="submit">
+              Отправить заявку
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <p class="form-note">
+              Это демонстрационная форма: данные не отправляются
+              и не сохраняются.
+            </p>
+          </form>
+
+          <div class="form-success" id="form-success" hidden>
+            <span class="form-success-icon" aria-hidden="true">✓</span>
+            <h3>Спасибо, <span id="success-name">друг</span>!</h3>
+            <p>
+              Это демо-форма: заявка никуда не отправлена и не сохранилась.
+              Чтобы записаться по-настоящему, позвоните в студию.
+            </p>
+            <div class="form-success-actions">
+              <a class="btn btn--gold" href="tel:+79000000000">Позвонить</a>
+              <button class="btn btn--outline" type="button" id="form-reset">Заполнить ещё раз</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Контакты ─────────────────────────────────────── -->
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-grid">
+        <div class="contacts-copy">
+          <p class="eyebrow eyebrow--light"><span>06</span> Контакты</p>
+          <h2 class="section-title reveal" id="contacts-title">
+            Ждём вас<br /><em>на ул. Примерной, 1</em>
+          </h2>
+          <p class="contacts-lead reveal">
+            Если потеряетесь — позвоните, подскажем, как пройти.
+          </p>
+          <div class="contacts-actions reveal">
+            <a class="btn btn--gold" href="tel:+79000000000">Позвонить</a>
+          </div>
+        </div>
+
+        <dl class="contact-list">
+          <div class="reveal">
+            <dt>Адрес</dt>
+            <dd>
+              <span>ул. Примерная, 1<br />Ростов-на-Дону</span>
+            </dd>
+          </div>
+          <div class="reveal">
+            <dt>Телефон</dt>
+            <dd><a href="tel:+79000000000">+7 (900) 000-00-00</a></dd>
+          </div>
+          <div class="reveal">
+            <dt>Часы</dt>
+            <dd>
+              Ежедневно, 09:30–20:00
+              <span>запись по телефону или через форму</span>
+            </dd>
+          </div>
+          <div class="reveal">
+            <dt>Ориентир</dt>
+            <dd>
+              Демо-ориентир
+              <span>укажем при записи</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a class="brand brand--footer" href="#top" aria-label="Нуар Студио — наверх">
+        <svg class="brand-logo" viewBox="0 0 200 85" aria-hidden="true" focusable="false">
+          <use href="#logo-lili"></use>
+        </svg>
+        <span class="brand-sub">студия красоты</span>
+      </a>
+
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#services">Услуги</a>
+        <a href="#about">О студии</a>
+        <a href="#gallery">Работы</a>
+        <a href="#booking">Запись</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="footer-phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Нуар Студио. Демо-макет, не официальный сайт студии.</p>
+      <p>Демо-изображения · <span class="made-by">made by Lim</span></p>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть просмотр">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <figure>
+      <img id="lightbox-img" alt="Демо-изображение" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="assets/main.js" defer></script>
+<a class="back-home" href="../" aria-label="Вернуться в портфолио">&#8592; В портфолио</a>
+<style>
+  .back-home{position:fixed;left:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.24);background:rgba(14,12,10,.78);color:#f6f0e5;font:600 10px/1 "Manrope","Segoe UI",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.25);transition:background .2s,transform .2s}
+  .back-home:hover{background:rgba(14,12,10,.94);transform:translateY(-2px)}
+</style>
+  <div style="position:fixed;right:16px;bottom:16px;z-index:9998;max-width:min(320px,calc(100% - 180px));padding:8px 12px;border-radius:8px;background:rgba(0,0,0,.72);color:#fff;font:500 11px/1.35 -apple-system,'Segoe UI',Arial,sans-serif;letter-spacing:.02em;pointer-events:none;">Демо-концепт. Заведение, адреса и отзывы вымышлены</div>
+</body>
+</html>

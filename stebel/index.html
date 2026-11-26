@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <base href="./" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>СТЕБЕЛЬ — цветочный бар в Москве · цветы без повода</title>
+  <meta name="description" content="СТЕБЕЛЬ — цветочный бар в Москве. Свежие сезонные цветы каждый день, конструктор букета, доставка за 60 минут с фото перед отправкой." />
+  <meta name="theme-color" content="#0a0d0a" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0d0a'/%3E%3Cg stroke='%23d6ff4b' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M16 5v22M6.5 10.5l19 11M25.5 10.5l-19 11'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" /></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.1-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z" /></symbol>
+    </defs>
+  </svg>
+
+  <header class="top">
+    <div class="container top-inner">
+      <a class="logo" href="#top" aria-label="СТЕБЕЛЬ — цветочный бар, на главную">
+        <span class="logo-word">СТЕБЕЛЬ</span>
+        <span class="logo-star" aria-hidden="true">*</span>
+        <span class="logo-sub">цветочный бар</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#catalog">Букеты</a>
+        <a href="#builder">Конструктор</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#about">О баре</a>
+      </nav>
+
+      <div class="top-actions">
+        <a class="phone" href="tel:+74951204545">+7 495 120-45-45</a>
+        <a class="btn btn--lime btn--sm" href="#builder">Собрать букет</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero" id="top">
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Цветочный бар · Москва</p>
+
+        <h1 class="hero-title">
+          <span class="title-line">ЦВЕТЫ</span>
+          <span class="title-line title-line--outline">БЕЗ</span>
+          <span class="title-line title-line--lime">ПОВОДА</span>
+        </h1>
+
+        <p class="hero-lead">
+          Не день рождения. Не 8 Марта. Просто потому что. Свежие сезонные цветы
+          каждый день — соберите букет за две минуты, а мы привезём его за час.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--lime" href="#builder">
+            Собрать букет
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+          <a class="btn btn--ghost" href="#catalog">
+            Каталог
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><span class="star" aria-hidden="true">✦</span>4,9 на Яндекс Картах</li>
+          <li><span class="star" aria-hidden="true">✦</span>Доставка 60 минут</li>
+          <li><span class="star" aria-hidden="true">✦</span>Фото перед отправкой</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <figure class="photo">
+          <img src="assets/img/bouquet.jpg" alt="Букет свежих розовых пионов" width="900" height="1125" fetchpriority="high" decoding="async" />
+          <p class="fresh-badge">свежие<br />каждый день</p>
+          <figcaption class="photo-tag">
+            <span>Букет дня</span>
+            <strong>4 900 ₽</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section class="builder" id="builder" aria-labelledby="builder-title">
+      <div class="container builder-inner">
+        <div class="builder-copy">
+          <p class="builder-kicker">Конструктор букета</p>
+          <h2 class="builder-title" id="builder-title">Собери свой</h2>
+        </div>
+
+        <div class="chips" role="group" aria-label="Основа букета">
+          <button class="chip is-active" type="button" data-price="2 900" aria-pressed="true">Пионы</button>
+          <button class="chip" type="button" data-price="3 400" aria-pressed="false">Розы</button>
+          <button class="chip" type="button" data-price="3 900" aria-pressed="false">Микс</button>
+        </div>
+
+        <p class="builder-price" aria-live="polite">от <strong class="js-price">2 900</strong> ₽</p>
+
+        <a class="builder-go" href="#order" aria-label="Перейти в конструктор букета">
+          <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>Пионы</span><i>✦</i><span>Розы</span><i>✦</i><span>Гортензии</span><i>✦</i><span>Тюльпаны</span><i>✦</i><span>Эустома</span><i>✦</i><span>Ранункулюсы</span><i>✦</i><span>Свадебная флористика</span><i>✦</i><span>Оформление</span><i>✦</i>
+        </div>
+        <div class="ticker-group">
+          <span>Пионы</span><i>✦</i><span>Розы</span><i>✦</i><span>Гортензии</span><i>✦</i><span>Тюльпаны</span><i>✦</i><span>Эустома</span><i>✦</i><span>Ранункулюсы</span><i>✦</i><span>Свадебная флористика</span><i>✦</i><span>Оформление</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var chips = document.querySelectorAll(".chip");
+      var price = document.querySelector(".js-price");
+      chips.forEach(function (chip) {
+        chip.addEventListener("click", function () {
+          chips.forEach(function (c) {
+            c.classList.toggle("is-active", c === chip);
+            c.setAttribute("aria-pressed", c === chip ? "true" : "false");
+          });
+          if (price) price.textContent = chip.dataset.price;
+        });
+      });
+    })();
+  </script>
+<a class="back-home" href="../" aria-label="Вернуться в портфолио">&#8592; В портфолио</a>
+<style>
+  .back-home{position:fixed;left:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.24);background:rgba(14,12,10,.78);color:#f6f0e5;font:600 10px/1 "Manrope","Segoe UI",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.25);transition:background .2s,transform .2s}
+  .back-home:hover{background:rgba(14,12,10,.94);transform:translateY(-2px)}
+</style>
+</body>
+</html>

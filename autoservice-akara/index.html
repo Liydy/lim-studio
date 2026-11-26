@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <base href="./" />
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Автосервис Гарант 61 — демо-концепт автосервиса</title>
+  <meta name="description" content="Демо-концепт автосервиса «Гарант 61»: диагностика, ТО и ремонт автомобилей. Адрес и контакты вымышлены." />
+  <meta name="theme-color" content="#111312" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Автосервис Гарант 61 — демо-концепт" />
+  <meta property="og:description" content="Демо-концепт автосервиса: диагностика, ТО и ремонт. Адрес и контакты вымышлены." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.1-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z" fill="currentColor" stroke="none" /></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-4-.9L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5z" /></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" /></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><path d="M9 20l-5-2V4l5 2 6-2 5 2v14l-5-2-6 2z" /><path d="M9 6v14M15 4v14" /></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18" /></symbol>
+      <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16h14M6 16l1.7-5.2A2 2 0 0 1 9.6 9h4.8a2 2 0 0 1 1.9 1.8L18 16" /><path d="M4 16v3M20 16v3M7.5 16a1.5 1.5 0 1 0 3 0M13.5 16a1.5 1.5 0 1 0 3 0" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z" /><path d="m8.8 12 2.2 2.2 4.4-4.4" /></symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="topbar-item" href="#">
+        <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+        Ростов-на-Дону, ул. Примерная, 1
+      </a>
+      <p class="topbar-item topbar-hours">
+        <svg aria-hidden="true"><use href="#i-clock"></use></svg>
+        Ежедневно 09:00–20:00
+      </p>
+      <div class="topbar-socials">
+        <a href="#">WhatsApp</a>
+        <a href="#">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Автосервис Гарант 61 — на главную">
+        <img class="brand-logo-wide" src="assets/img/logo-wide.png" width="172" height="46" alt="" />
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#why">Почему мы</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">О сервисе</a>
+        <a href="#gallery">Фото</a>
+        <a href="#reviews">Демо-отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+79000000000" aria-label="Позвонить: +7 (900) 000-00-00">
+          <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+          <span>+7 (900) 000-00-00</span>
+        </a>
+        <a class="btn btn--solid btn--sm header-cta" href="#booking">Записаться</a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-top">
+      <span class="mobile-nav-label">
+        <img class="brand-logo-wide brand-logo-wide--mobile" src="assets/img/logo-wide.png" width="112" height="30" alt="" />
+      </span>
+      <button class="mobile-nav-close" type="button" aria-label="Закрыть меню">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav aria-label="Мобильная навигация">
+      <a href="#why"><span>01</span>Почему мы</a>
+      <a href="#services"><span>02</span>Услуги и цены</a>
+      <a href="#about"><span>03</span>О сервисе</a>
+      <a href="#gallery"><span>04</span>Фотогалерея</a>
+      <a href="#reviews"><span>05</span>Демо-отзывы</a>
+      <a href="#booking"><span>06</span>Запись</a>
+      <a href="#contacts"><span>07</span>Контакты</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a class="mobile-phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+      <p>ул. Примерная, 1<br />Ростов-на-Дону<br />Ежедневно 09:00–20:00</p>
+      <div class="mobile-socials">
+        <a href="#">WhatsApp</a>
+        <a href="#">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-brand reveal">
+            <span class="checker-dot" aria-hidden="true"></span>
+            Автосервис <strong>Гарант 61</strong>
+            <span class="hero-brand-sep">/</span>
+            Ростов-на-Дону
+          </p>
+
+          <h1 class="hero-title reveal" id="hero-title">
+            Сервис<br />
+            без <span>сюрпризов</span>
+          </h1>
+
+          <p class="hero-lead reveal">
+            Диагностика, ТО и ремонт автомобилей на ул. Примерной, 1.
+            Сначала находим причину и согласуем смету — только потом берёмся за работу.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn--solid" href="#booking">
+              Записаться на сервис
+              <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="tel:+79000000000">
+              <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+              Позвонить
+            </a>
+          </div>
+
+          <div class="hero-proof reveal">
+            <a class="promo-chip" href="#promo">
+              <span aria-hidden="true">−10%</span>
+              на первый визит
+            </a>
+          </div>
+
+          <ul class="hero-tags reveal" aria-label="Популярные услуги">
+            <li>Компьютерная диагностика</li>
+            <li>ТО и замена масла</li>
+            <li>Ремонт ходовой</li>
+            <li>Заправка кондиционера</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-media">
+            <figure class="hero-photo">
+              <img src="assets/img/hero.jpg" alt="Демо-изображение" width="1280" height="720" fetchpriority="high" decoding="async" />
+              <figcaption class="hero-photo-label">
+                <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+                ул. Примерная, 1
+              </figcaption>
+            </figure>
+
+            <figure class="hero-flag" aria-hidden="true">
+              <picture>
+                <source srcset="assets/img/flag.webp" type="image/webp" />
+                <img src="assets/img/flag.png" alt="Демо-изображение" width="400" height="1668" decoding="async" />
+              </picture>
+            </figure>
+          </div>
+
+          <div class="hero-status" id="open-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-copy">
+              <strong class="js-open-text">Открыто до 20:00</strong>
+              <span class="js-open-sub">Работаем каждый день</span>
+            </span>
+            <span class="status-icon" aria-hidden="true"><svg><use href="#i-clock"></use></svg></span>
+          </div>
+
+          <div class="hero-stats" aria-label="Демо-концепт">
+            <div class="hero-stat">
+              <strong>7<span>/7</span></strong>
+              <span>дней в неделю</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Виды работ">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>Компьютерная диагностика</span><i aria-hidden="true"></i>
+          <span>ТО и замена масла</span><i aria-hidden="true"></i>
+          <span>Ремонт ходовой</span><i aria-hidden="true"></i>
+          <span>Заправка кондиционера</span><i aria-hidden="true"></i>
+          <span>Ремонт двигателя</span><i aria-hidden="true"></i>
+          <span>Замена ГРМ</span><i aria-hidden="true"></i>
+          <span>Тормозная система</span><i aria-hidden="true"></i>
+          <span>Сварочные работы</span><i aria-hidden="true"></i>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>Компьютерная диагностика</span><i></i>
+          <span>ТО и замена масла</span><i></i>
+          <span>Ремонт ходовой</span><i></i>
+          <span>Заправка кондиционера</span><i></i>
+          <span>Ремонт двигателя</span><i></i>
+          <span>Замена ГРМ</span><i></i>
+          <span>Тормозная система</span><i></i>
+          <span>Сварочные работы</span><i></i>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ── Почему Гарант 61 ─────────────────────────────────── -->
+    <section class="section section--paper why" id="why" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div class="why-head">
+          <p class="kicker reveal"><span>01</span> Почему Гарант 61</p>
+          <h2 class="section-title reveal" id="why-title">Ремонт,<br />в котором<br /><em>всё понятно</em></h2>
+          <p class="section-intro reveal">
+            Мы не любим сюрпризы в счёте так же, как и вы. Поэтому строим работу
+            на диагностике, согласовании и нормальном человеческом объяснении.
+          </p>
+          <div class="why-features reveal">
+            <span><svg aria-hidden="true"><use href="#i-check"></use></svg>Демо-автосервис</span>
+            <span><svg aria-hidden="true"><use href="#i-check"></use></svg>Оплата картой</span>
+            <span><svg aria-hidden="true"><use href="#i-check"></use></svg>Парковка</span>
+            <span><svg aria-hidden="true"><use href="#i-check"></use></svg>Wi-Fi</span>
+          </div>
+          <a class="text-link reveal" href="#services">Смотреть услуги и цены <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+
+        <div class="why-cards">
+          <article class="why-card reveal">
+            <div class="why-card-top">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="18" rx="2" /><path d="M9 29h14M16 23v6" /><path d="M7 15h4l2-4 3 7 2-3h6" /></svg>
+              </span>
+              <span class="why-num">01</span>
+            </div>
+            <h3>Сначала диагностика</h3>
+            <p>Не меняем детали «на всякий случай». Находим причину, показываем и объясняем, что произошло.</p>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-card-top">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3" /><circle cx="16" cy="16" r="5" /></svg>
+              </span>
+              <span class="why-num">02</span>
+            </div>
+            <h3>Смета до работ</h3>
+            <p>Согласуем перечень работ и запчастей заранее. Без неожиданных строк в счёте и «допов» по ходу.</p>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-card-top">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M5 16h14M6 16l1.7-5.2A2 2 0 0 1 9.6 9h4.8a2 2 0 0 1 1.9 1.8L18 16" /><path d="M4 16v3M20 16v3M7.5 16a1.5 1.5 0 1 0 3 0M13.5 16a1.5 1.5 0 1 0 3 0" /></svg>
+              </span>
+              <span class="why-num">03</span>
+            </div>
+            <h3>Своя команда</h3>
+            <p>Мастера с опытом на разных марках — от отечественных до BMW, Land Rover и японских автомобилей.</p>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-card-top">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M4 24h24M6 24V13h20v11M9 13V8h14v5" /><path d="M10 17h4M18 17h4M12 24v-3h8v3" /></svg>
+              </span>
+              <span class="why-num">04</span>
+            </div>
+            <h3>Комфорт в ожидании</h3>
+            <p>Кожаные диваны, телевизор, чай, кофе и сладости. Клиенты отдельно отмечают зону ожидания в отзывах.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Услуги ───────────────────────────────────────── -->
+    <section class="section section--deep services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker reveal"><span>02</span> Услуги и цены</p>
+            <h2 class="section-title reveal" id="services-title">Что делаем<br /><em>в Гарант 61</em></h2>
+          </div>
+          <div class="section-head-side reveal">
+            <p class="section-intro">
+              От планового ТО до ремонта двигателя. Работаем с легковыми автомобилями
+              европейских, японских, корейских, китайских и отечественных марок.
+            </p>
+            <p class="price-note">
+              <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              Цены — ориентировочные. Итоговая стоимость — после осмотра и согласования.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="18" rx="2" /><path d="M9 29h14M16 23v6" /><path d="M7 15h4l2-4 3 7 2-3h6" /></svg>
+              </span>
+              <span class="service-num">01</span>
+            </div>
+            <h3>Компьютерная диагностика</h3>
+            <p>Считываем ошибки, проверяем датчики и агрегаты. Объясняем причину поломки простыми словами.</p>
+            <div class="service-foot">
+              <span class="service-price">от 1 000 ₽</span>
+              <button class="service-pick" type="button" data-service="Компьютерная диагностика">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 4s9 8.5 9 15a9 9 0 0 1-18 0C7 12.5 16 4 16 4z" /><path d="M12 20c1 2 2.5 3 4 3" /></svg>
+              </span>
+              <span class="service-num">02</span>
+            </div>
+            <h3>ТО и замена масла</h3>
+            <p>Плановое обслуживание по регламенту: масло, фильтры и проверка ключевых узлов автомобиля.</p>
+            <div class="service-foot">
+              <span class="service-price">от 1 000 ₽</span>
+              <button class="service-pick" type="button" data-service="ТО и замена масла">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M10 5h12l-9 5h9l-9 5h9l-9 5h9l-3 7" /><path d="M5 29h22" /></svg>
+              </span>
+              <span class="service-num">03</span>
+            </div>
+            <h3>Ремонт ходовой части</h3>
+            <p>Диагностика подвески, замена рычагов, шаровых опор, сайлентблоков, амортизаторов и пружин.</p>
+            <div class="service-foot">
+              <span class="service-price">от 2 000 ₽</span>
+              <button class="service-pick" type="button" data-service="Ремонт ходовой части">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 4v24M6 10l20 12M26 10 6 22" /><path d="M13 7l3 3 3-3M13 25l3-3 3 3M8 13l3 3-3 3M24 13l-3 3 3 3" /></svg>
+              </span>
+              <span class="service-num">04</span>
+            </div>
+            <h3>Заправка кондиционера</h3>
+            <p>Диагностика системы, поиск утечек, заправка хладагентом и проверка работы климата.</p>
+            <div class="service-foot">
+              <span class="service-price">2 000 ₽</span>
+              <button class="service-pick" type="button" data-service="Заправка кондиционера">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="5" /><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3" /></svg>
+              </span>
+              <span class="service-num">05</span>
+            </div>
+            <h3>Замена ГРМ</h3>
+            <p>Замена ремня или цепи ГРМ, роликов и сопутствующих элементов с проверкой меток.</p>
+            <div class="service-foot">
+              <span class="service-price">от 5 000 ₽</span>
+              <button class="service-pick" type="button" data-service="Замена ГРМ">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M8 12h3l2-3h7l2 3h3v10h-3l-2 3h-7l-2-3H8z" /><path d="M3 15h5M3 20h5M27 15h2v6h-2M13 12V8h6" /></svg>
+              </span>
+              <span class="service-num">06</span>
+            </div>
+            <h3>Ремонт двигателя</h3>
+            <p>Диагностика и ремонт ДВС, замена расходников и узлов, устранение течей и посторонних шумов.</p>
+            <div class="service-foot">
+              <span class="service-price">от 20 000 ₽</span>
+              <button class="service-pick" type="button" data-service="Ремонт двигателя">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" /><circle cx="16" cy="16" r="4" /><path d="M16 6v4M16 22v4M6 16h4M22 16h4" /></svg>
+              </span>
+              <span class="service-num">07</span>
+            </div>
+            <h3>Тормозная система</h3>
+            <p>Колодки, диски, суппорты и тормозные линии. Проверяем эффективность торможения.</p>
+            <div class="service-foot">
+              <span class="service-price">по запросу</span>
+              <button class="service-pick" type="button" data-service="Тормозная система">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M18 3 7 18h7l-2 11 11-15h-7l2-11z" /><path d="M4 4l2 2M28 28l-2-2" /></svg>
+              </span>
+              <span class="service-num">08</span>
+            </div>
+            <h3>Электрика и стартеры</h3>
+            <p>Ремонт генераторов и стартеров, поиск неисправностей в проводке и электронных системах.</p>
+            <div class="service-foot">
+              <span class="service-price">по запросу</span>
+              <button class="service-pick" type="button" data-service="Электрика и стартеры">Выбрать <svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="service-tags reveal">
+          <p>Также делаем:</p>
+          <ul>
+            <li>Ремонт системы охлаждения</li>
+            <li>Ремонт шаровых опор</li>
+            <li>Ремонт рулевого редуктора</li>
+            <li>Удаление и замена катализаторов</li>
+            <li>Ремонт генераторов</li>
+            <li>Ремонт стартеров</li>
+            <li>Сварочные работы</li>
+            <li>Установка фаркопа</li>
+            <li>Запчасти под заказ</li>
+          </ul>
+        </div>
+
+        <div class="services-cta reveal">
+          <p>Не нашли нужную работу? Позвоните — подскажем, сможем ли помочь.</p>
+          <a class="btn btn--dark" href="tel:+79000000000">
+            <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+            +7 (900) 000-00-00
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── О сервисе ────────────────────────────────────── -->
+    <section class="section section--dark about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <figure class="about-photo about-photo--main">
+            <img src="assets/img/about-main.jpg" alt="Демо-изображение" width="1280" height="720" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-photo about-photo--small">
+            <img src="assets/img/about-lounge.jpg" alt="Демо-изображение" width="720" height="1280" loading="lazy" decoding="async" />
+          </figure>
+          <div class="about-badge">
+            <strong>09:00–20:00</strong>
+            <span>без выходных</span>
+          </div>
+          <div class="about-quote">
+            <p>Демо-концепт</p>
+            <span>отзывы и цифры вымышлены</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="kicker kicker--light reveal"><span>03</span> О сервисе</p>
+          <h2 class="section-title section-title--light reveal" id="about-title">Новая команда<br />на <em>знакомом месте</em></h2>
+          <div class="about-text reveal">
+            <p class="about-lead">
+              «Автосервис Гарант 61» — новая организация на ул. Примерной, 1.
+              Компания, которая работала здесь раньше, больше не принимает клиентов.
+              Мы собрали свою команду и начали с чистого листа.
+            </p>
+            <p>
+              Ремонтируем легковые автомобили европейских, японских, корейских,
+              китайских и отечественных марок. Работаем на современном подъёмном
+              оборудовании, используем профессиональный инструмент и подбираем
+              запчасти под конкретную задачу.
+            </p>
+            <p>
+              Наша цель — чтобы вы уехали с понятным результатом и захотели
+              вернуться на следующее ТО. Без давления, навязанных работ и
+              «сюрпризов» в счёте.
+            </p>
+          </div>
+
+          <ul class="about-list reveal">
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Демо-автосервис</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Предварительная запись</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Оплата картой</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Парковка и Wi-Fi</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Сварочные работы</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Можно с собакой</li>
+          </ul>
+
+          <div class="about-brands reveal">
+            <p>Работаем с марками</p>
+            <span>BMW · Mercedes-Benz · Audi · Volkswagen · Toyota · Lexus · Kia · Hyundai · Mazda · Nissan · Chery · Geely · Lada и другие</span>
+          </div>
+
+          <a class="btn btn--solid reveal" href="#booking">
+            Записаться в Гарант 61
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Галерея ──────────────────────────────────────── -->
+    <section class="section section--paper gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker reveal"><span>04</span> Как у нас</p>
+            <h2 class="section-title reveal" id="gallery-title">Сервис<br /><em>изнутри</em></h2>
+          </div>
+          <div class="section-head-side reveal">
+            <p class="section-intro">
+              Демо-изображения: как может выглядеть сервис.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g1-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g1.jpg" alt="Демо-изображение" width="720" height="1080" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>01</span> Демо-зона</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g2-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g2.jpg" alt="Демо-изображение" width="720" height="1280" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>02</span> Ремонт ходовой</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g3-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g3.jpg" alt="Демо-изображение" width="720" height="1280" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>03</span> Зона приёмки</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g4-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g4.jpg" alt="Демо-изображение" width="720" height="1280" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>04</span> Инструмент</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g5-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g5.jpg" alt="Демо-изображение" width="720" height="1280" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>05</span> Ресепшен</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-full="assets/img/g6-full.jpg" data-caption="Демо-изображение">
+            <img src="assets/img/g6.jpg" alt="Демо-изображение" width="720" height="405" loading="lazy" decoding="async" />
+            <span class="gallery-caption"><span>06</span> Цех и подъёмники</span>
+            <span class="gallery-zoom" aria-hidden="true">+</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── Акция ────────────────────────────────────────── -->
+    <section class="promo" id="promo" aria-labelledby="promo-title">
+      <span class="promo-checker promo-checker--left" aria-hidden="true"></span>
+      <span class="promo-checker promo-checker--right" aria-hidden="true"></span>
+      <div class="container promo-grid">
+        <div class="promo-copy reveal">
+          <p class="kicker kicker--dark"><span>05</span> Первый визит</p>
+          <h2 class="promo-title" id="promo-title"><span>−10%</span> на первый визит</h2>
+          <p class="promo-text">
+            На услуги и запчасти нашего автосервиса. Приезжайте знакомиться —
+            покажем сервис, ответим на вопросы и посчитаем стоимость работ.
+          </p>
+          <p class="promo-date">Акция действует с 22.04.2026 по 25.04.2027</p>
+        </div>
+        <div class="promo-action reveal">
+          <div class="promo-stamp" aria-hidden="true">
+            <span>−10%</span>
+            <small>первый визит</small>
+          </div>
+          <a class="btn btn--dark promo-btn" href="#booking" data-service="Первый визит · −10%">
+            Записаться со скидкой
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+          <p>Скидка действует при первом обращении в «Автосервис Гарант 61».</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Отзывы (демо) ────────────────────────────────── -->
+    <section class="section section--paper reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker reveal"><span>06</span> Демо</p>
+            <h2 class="section-title reveal" id="reviews-title">Отзывы<br /><em>вымышлены</em></h2>
+          </div>
+          <div class="section-head-side reveal">
+            <p class="section-intro">Демо-концепт: отзывы, имена и оценки не относятся к реальным клиентам.</p>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <aside class="rating-panel reveal">
+            <div class="rating-big">
+              <strong>Демо</strong>
+              <div><span>без реальных рейтингов</span></div>
+            </div>
+          </aside>
+
+          <div class="review-cards">
+            <article class="review-card reveal">
+              <div class="review-top">
+                <span class="review-avatar" aria-hidden="true">Д</span>
+                <div><strong>Демо-клиент 1</strong><span>демо</span></div>
+              </div>
+              <blockquote>«Короткий вымышленный отзыв для демонстрации интерфейса. Не относится к реальному сервису».</blockquote>
+            </article>
+
+            <article class="review-card reveal">
+              <div class="review-top">
+                <span class="review-avatar" aria-hidden="true">Д</span>
+                <div><strong>Демо-клиент 2</strong><span>демо</span></div>
+              </div>
+              <blockquote>«Ещё один демо-отзыв. Имена, даты и оценки здесь вымышлены».</blockquote>
+            </article>
+
+            <article class="review-card reveal">
+              <div class="review-top">
+                <span class="review-avatar" aria-hidden="true">Д</span>
+                <div><strong>Демо-клиент 3</strong><span>демо</span></div>
+              </div>
+              <blockquote>«Демо-текст для проверки вёрстки карточек отзывов. Не является реальным отзывом».</blockquote>
+            </article>
+
+            <article class="review-card reveal">
+              <div class="review-top">
+                <span class="review-avatar" aria-hidden="true">Д</span>
+                <div><strong>Демо-клиент 4</strong><span>демо</span></div>
+              </div>
+              <blockquote>«Вымышленный отзыв. Заведение, адреса и отзывы в этом концепте не настоящие».</blockquote>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Запись ───────────────────────────────────────── -->
+    <section class="section section--dark booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="kicker kicker--light reveal"><span>07</span> Запись на сервис</p>
+          <h2 class="section-title section-title--light reveal" id="booking-title">Оставьте заявку<br /><em>мы перезвоним</em></h2>
+          <p class="booking-lead reveal">
+            Уточним задачу, подскажем ближайшее свободное время и сориентируем
+            по стоимости. Если вопрос срочный — звоните, так быстрее.
+          </p>
+
+          <div class="booking-contacts reveal">
+            <a class="booking-contact booking-contact--phone" href="tel:+79000000000">
+              <span class="booking-contact-icon"><svg aria-hidden="true"><use href="#i-phone"></use></svg></span>
+              <span>
+                <small>Позвонить</small>
+                <strong>+7 (900) 000-00-00</strong>
+              </span>
+            </a>
+            <div class="booking-messengers">
+              <a href="#">
+                <svg aria-hidden="true"><use href="#i-chat"></use></svg>
+                WhatsApp
+              </a>
+              <a href="#">
+                <svg aria-hidden="true"><use href="#i-send"></use></svg>
+                Telegram
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-info reveal">
+            <div>
+              <svg aria-hidden="true"><use href="#i-clock"></use></svg>
+              <p><strong>Ежедневно 09:00–20:00</strong><span>Без выходных, в том числе в воскресенье</span></p>
+            </div>
+            <div>
+              <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+              <p><strong>Ростов-на-Дону, ул. Примерная, 1</strong><span>Парковка перед сервисом</span></p>
+            </div>
+            <div>
+              <svg aria-hidden="true"><use href="#i-car"></use></svg>
+              <p><strong>Принимаем в день обращения</strong><span>Наличие свободного места уточняйте по телефону</span></p>
+            </div>
+          </div>
+
+          <p class="booking-note reveal">
+            <svg aria-hidden="true"><use href="#i-check"></use></svg>
+            Заявка ни к чему не обязывает: сначала обсудим задачу и стоимость.
+          </p>
+        </div>
+
+        <div class="booking-card reveal">
+          <div class="booking-card-head">
+            <p>Заявка на сервис</p>
+            <span>Ответим в течение рабочего дня</span>
+          </div>
+
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="field">
+              <label for="bf-name">Как вас зовут *</label>
+              <input type="text" id="bf-name" name="name" autocomplete="name" placeholder="Например, Алексей" required />
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="bf-phone">Телефон *</label>
+              <input type="tel" id="bf-phone" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" inputmode="tel" required />
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field field--full">
+              <label for="bf-car">Автомобиль</label>
+              <input type="text" id="bf-car" name="car" placeholder="Марка, модель и год" />
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field field--full">
+              <label for="bf-service">Что нужно сделать? *</label>
+              <select id="bf-service" name="service" required>
+                <option value="">Выберите услугу или консультацию</option>
+                <option>Компьютерная диагностика</option>
+                <option>ТО и замена масла</option>
+                <option>Ремонт ходовой части</option>
+                <option>Заправка кондиционера</option>
+                <option>Замена ГРМ</option>
+                <option>Ремонт двигателя</option>
+                <option>Тормозная система</option>
+                <option>Электрика и стартеры</option>
+                <option>Сварочные работы / фаркоп</option>
+                <option>Первый визит · −10%</option>
+                <option>Другое / консультация</option>
+              </select>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="bf-date">Удобная дата</label>
+              <input type="date" id="bf-date" name="date" />
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="bf-time">Удобное время</label>
+              <select id="bf-time" name="time">
+                <option value="">Любое</option>
+                <option>09:00–12:00</option>
+                <option>12:00–15:00</option>
+                <option>15:00–18:00</option>
+                <option>18:00–20:00</option>
+              </select>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field field--full">
+              <label for="bf-comment">Комментарий</label>
+              <textarea id="bf-comment" name="comment" rows="3" placeholder="Опишите проблему или пожелания"></textarea>
+            </div>
+
+            <div class="field field--full field--consent">
+              <label class="consent">
+                <input type="checkbox" id="bf-consent" name="consent" required />
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field field--full">
+              <button class="btn btn--solid form-submit" type="submit">
+                Отправить заявку
+                <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+              </button>
+              <p class="form-hint">Нажимая кнопку, вы переходите в WhatsApp с готовым сообщением. Отправка — уже там.</p>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success" role="status" hidden>
+            <span class="success-mark" aria-hidden="true">
+              <svg><use href="#i-check"></use></svg>
+            </span>
+            <h3 tabindex="-1">Спасибо, <span id="success-name">друг</span>!</h3>
+            <p>
+              Заявка сформирована. Отправьте её в WhatsApp — и мы подтвердим
+              время визита. Если удобнее, просто позвоните.
+            </p>
+            <a class="btn btn--solid" id="wa-send" href="#">
+              Отправить в WhatsApp
+              <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--outline" href="tel:+79000000000">
+              <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+              Позвонить
+            </a>
+            <button class="form-reset" id="form-reset" type="button">Изменить данные</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── Контакты ─────────────────────────────────────── -->
+    <section class="section section--paper contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-grid">
+        <div class="contacts-copy">
+          <p class="kicker reveal"><span>08</span> Контакты</p>
+          <h2 class="section-title reveal" id="contacts-title">ул. Примерная,<br /><em>1</em></h2>
+          <p class="contacts-lead reveal">
+            Ростов-на-Дону, ул. Примерная, 1. Въезд в цех — прямо с улицы,
+            перед сервисом есть парковка.
+          </p>
+
+          <div class="contacts-list reveal">
+            <a class="contact-row" href="tel:+79000000000">
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-phone"></use></svg></span>
+              <span>
+                <small>Телефон</small>
+                <strong>+7 (900) 000-00-00</strong>
+              </span>
+            </a>
+            <div class="contact-row">
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+              <span>
+                <small>Режим работы</small>
+                <strong>Ежедневно 09:00–20:00</strong>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-pin"></use></svg></span>
+              <span>
+                <small>Адрес</small>
+                <strong>ул. Примерная, 1</strong>
+              </span>
+            </div>
+          </div>
+
+          <div class="contacts-actions reveal">
+            <a class="btn btn--outline" href="#">
+              <svg aria-hidden="true"><use href="#i-chat"></use></svg>
+              Написать в WhatsApp
+            </a>
+          </div>
+
+          <div class="contacts-meta reveal">
+            <p><span>Демо-автосервис</span><span>Оплата картой</span><span>Парковка</span><span>Wi-Fi</span><span>Можно с собакой</span></p>
+            <details>
+              <summary>Реквизиты</summary>
+              <p>Реквизиты вымышлены. Демо-концепт.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="contacts-map reveal">
+          <div class="map-frame">
+            <div style="min-height:320px;height:100%;background:linear-gradient(135deg,#242725,#4a4f4b);"></div>
+            <div class="map-label">
+              <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+              <span><strong>Автосервис Гарант 61</strong> ул. Примерная, 1</span>
+            </div>
+          </div>
+          <div class="map-foot">
+            <span>Демо-локация. Адрес вымышлен.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-checker" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#top" aria-label="Автосервис Гарант 61 — на главную">
+          <img class="brand-logo-wide brand-logo-wide--footer" src="assets/img/logo-wide.png" width="180" height="48" alt="" />
+        </a>
+        <p>Честная диагностика, ремонт и обслуживание автомобилей в Ростове-на-Дону, ул. Примерная, 1.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#i-chat"></use></svg></a>
+          <a href="#" aria-label="Telegram"><svg aria-hidden="true"><use href="#i-send"></use></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <p>Разделы</p>
+        <a href="#why">Почему мы</a>
+        <a href="#services">Услуги и цены</a>
+        <a href="#about">О сервисе</a>
+        <a href="#gallery">Фотогалерея</a>
+        <a href="#reviews">Демо-отзывы</a>
+        <a href="#booking">Запись</a>
+      </nav>
+
+      <div class="footer-contacts">
+        <p>Контакты</p>
+        <a class="footer-phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+        <span>Ежедневно 09:00–20:00</span>
+        <span>Ростов-на-Дону,<br />ул. Примерная, 1</span>
+      </div>
+
+      <div class="footer-cta">
+        <p>Есть вопрос по машине?</p>
+        <a class="btn btn--solid" href="#booking">Записаться <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        <a class="footer-up" href="#top">Наверх <svg aria-hidden="true"><use href="#i-arrow-up"></use></svg></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Автосервис «Гарант 61» · демо-концепт</p>
+      <p>Реквизиты вымышлены</p>
+      <p>Информация на сайте не является публичной офертой.</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть просмотр">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" alt="Демо-изображение" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="assets/main.js"></script>
+<a class="back-home" href="../" aria-label="Вернуться в портфолио">&#8592; В портфолио</a>
+<style>
+  .back-home{position:fixed;left:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.24);background:rgba(14,12,10,.78);color:#f6f0e5;font:600 10px/1 "Manrope","Segoe UI",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.25);transition:background .2s,transform .2s}
+  .back-home:hover{background:rgba(14,12,10,.94);transform:translateY(-2px)}
+</style>
+  <div style="position:fixed;right:16px;bottom:16px;z-index:9998;max-width:min(320px,calc(100% - 180px));padding:8px 12px;border-radius:8px;background:rgba(0,0,0,.72);color:#fff;font:500 11px/1.35 -apple-system,'Segoe UI',Arial,sans-serif;letter-spacing:.02em;pointer-events:none;">Демо-концепт. Заведение, адреса и отзывы вымышлены</div>
+</body>
+</html>
